@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "Vue3 project template",
+    "welcome": "Simplify development and rapid project prototyping"
+  },
+  "copyright": {
+    "title": "vue template Created by pepedd864",
+    "version": "Versions：1.0.0"
+  },
+  "exception": {
+    "403": {
+      "back-home": "Back Home",
+      "description": "Sorry, you don't have access to this page",
+      "title": "403 Forbidden"
+    },
+    "404": {
+      "back-home": "Back Home",
+      "description": "Sorry, the page you visited does not exist",
+      "title": "404 Not Found"
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "tools": "tools",
+    "user-center": "User center"
+  },
+  "network": {
+    "code": {
+      "40000": "The request parameter is incorrect",
+      "40001": "The request data is empty",
+      "40100": "Not login",
+      "40101": "No permissions",
+      "40301": "Access blocking",
+      "50000": "Exceptions within the system"
+    }
+  },
+  "role": {
+    "admin": "System Admin",
+    "user": "Common user"
+  },
+  "setting": {
+    "language": {
+      "enUS": "English",
+      "title": "Language",
+      "zhCN": "简体中文"
+    },
+    "theme": {
+      "auto": "Auto",
+      "blue": "Blue",
+      "cyan": "Cyan",
+      "dark": "Dark",
+      "green": "Green",
+      "light": "Light",
+      "orange": "Orange",
+      "origin": "Default",
+      "purple": "Purple",
+      "red": "Red",
+      "title": "Skin",
+      "yellow": "Yellow"
+    },
+    "upload": "Upload Setting"
+  },
+  "system": {
+    "notify": "System prompt"
+  },
+  "user": {
+    "alert": {
+      "title": "Alert Message"
+    },
+    "center": {
+      "title": "User Center"
+    },
+    "login": {
+      "captcha": "Captcha",
+      "forget": "Forget password",
+      "nowRegister": "Now register",
+      "password": "Password",
+      "placeholder": {
+        "captcha": "Please enter captcha",
+        "password": "Please enter password",
+        "tenant": "Please select tenant",
+        "username": "Please enter username"
+      },
+      "remember-me": "Remember me",
+      "submit": "Login",
+      "tenant": "Tenant",
+      "title": "Login",
+      "username": "Username"
+    },
+    "logout": "Logout",
+    "register": {
+      "captcha": "Captcha",
+      "confirm": "Confirm",
+      "email": "Email",
+      "haveAccount": "Have account? Login now",
+      "nickname": "Nickname",
+      "password": "Password",
+      "placeholder": {
+        "captcha": "Please enter captcha",
+        "confirm": "Please enter confirm password",
+        "email": "Please enter email",
+        "password": "Please enter password",
+        "tenant": "Please select tenant",
+        "username": "Please enter username"
+      },
+      "submit": "Register",
+      "title": "Register",
+      "username": "Username"
+    }
+  }
+}

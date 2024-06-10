@@ -1,0 +1,111 @@
+{
+  "app": {
+    "title": "Vue3项目模板",
+    "welcome": "使用万用项目模板，简化开发，项目快速成型"
+  },
+  "copyright": {
+    "title": "通用Vue项目模板 Created by pepedd864",
+    "version": "版本号：1.0.0"
+  },
+  "exception": {
+    "403": {
+      "back-home": "返回首页",
+      "description": "抱歉，你无权访问该页面",
+      "title": "403 无权访问"
+    },
+    "404": {
+      "back-home": "返回首页",
+      "description": "抱歉，你访问的页面不存在",
+      "title": "404 未找到"
+    }
+  },
+  "menu": {
+    "dashboard": "首页",
+    "tools": "工具",
+    "user-center": "用户中心"
+  },
+  "network": {
+    "code": {
+      "40000": "请求参数错误",
+      "40001": "请求数据为空",
+      "40100": "未登录",
+      "40101": "无权限",
+      "40301": "访问屏蔽",
+      "50000": "系统内部异常"
+    }
+  },
+  "role": {
+    "admin": "系统管理员",
+    "user": "普通用户"
+  },
+  "setting": {
+    "language": {
+      "enUS": "English",
+      "title": "语言",
+      "zhCN": "简体中文"
+    },
+    "theme": {
+      "auto": "跟随系统",
+      "blue": "蓝色主题",
+      "cyan": "青色主题",
+      "dark": "深色主题",
+      "green": "绿色主题",
+      "light": "浅色主题",
+      "orange": "橙色主题",
+      "origin": "默认主题",
+      "purple": "紫色主题",
+      "red": "红色主题",
+      "title": "皮肤",
+      "yellow": "黄色主题"
+    },
+    "upload": "上传设置"
+  },
+  "system": {
+    "notify": "系统提示"
+  },
+  "user": {
+    "alert": {
+      "title": "系统提示"
+    },
+    "center": {
+      "title": "用户中心"
+    },
+    "login": {
+      "captcha": "验证码",
+      "forget": "忘记密码",
+      "nowRegister": "现在注册",
+      "password": "密码",
+      "placeholder": {
+        "captcha": "请输入验证码",
+        "password": "请输入密码",
+        "tenant": "请输入租户",
+        "username": "请输入用户名"
+      },
+      "remember-me": "记住我",
+      "submit": "登录",
+      "tenant": "租户",
+      "title": "登录",
+      "username": "用户名"
+    },
+    "logout": "退出登录",
+    "register": {
+      "captcha": "验证码",
+      "confirm": "确认密码",
+      "email": "邮箱",
+      "haveAccount": "已有用户名? 去登录",
+      "nickname": "昵称",
+      "password": "密码",
+      "placeholder": {
+        "captcha": "请输入验证码",
+        "confirm": "请再次输入密码",
+        "email": "请输入邮箱",
+        "password": "请输入密码",
+        "tenant": "请输入租户",
+        "username": "请输入用户名"
+      },
+      "submit": "注册",
+      "title": "注册",
+      "username": "用户名"
+    }
+  }
+}

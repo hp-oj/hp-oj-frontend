@@ -1,0 +1,185 @@
+@import 'theme.scss';
+
+:root {
+  --border-radius: 0px;
+  --blur-px: 40px;
+  --backdrop-blur: blur(var(--blur-px)) saturate(180%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  @include useTheme {
+    background-color: getModeVar('bgColor');
+    color: getModeVar('infoColor');
+  }
+}
+
+.enter-y {
+  --enter-duration: 0.4s;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: enter-y-animation var(--enter-duration) ease-in-out 0.3s forwards;
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+  @keyframes enter-y-animation {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// 通用卡片样式
+.card {
+  @apply shadow-md rounded-[var(--border-radius)];
+}
+
+// 对模态框进行通用设置
+.ant-modal-root {
+  .i-page-header {
+    backdrop-filter: var(--backdrop-blur) !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .ant-modal-mask {
+    background: transparent;
+    //@include useTheme {
+    //  background: rgba(getModeVar('bg1color'), 0.1);
+    //  backdrop-filter: blur(30px);
+    //}
+  }
+
+  .ant-modal {
+    @include useTheme {
+      outline: 3px solid rgba(getModeVar('borderColor'), 0.9);
+      background: rgba(getModeVar('cardBgColor'), 0.7);
+      backdrop-filter: var(--backdrop-blur);
+      box-shadow:
+        0 0 rgba(0, 0, 0, 0),
+        0 0 rgba(0, 0, 0, 0),
+        0 34px 50px -20px rgb(getModeVar('boxShadowColor'), 0.16),
+        0 32px 45px -12px rgb(getModeVar('boxShadowColor'), 0.14),
+        0 30px 40px -8px rgb(getModeVar('boxShadowColor'), 0.12),
+        inset 0 0 8px rgba(getModeVar('boxShadowColor'), 0.06);
+    }
+
+    .ant-modal-content {
+      background: transparent;
+
+      .ant-modal-header {
+        background: transparent;
+        border: none;
+
+        .ant-modal-title {
+          @apply text-2xl;
+        }
+      }
+
+      .ant-page-header-heading-title {
+        @apply text-base;
+      }
+
+      .ant-modal-close {
+        @apply w-7 h-7 rounded-full p-1;
+        transition: transform 0.3s;
+        @include useTheme {
+          background: getModeVar('cardBgColor');
+          &:hover {
+            background: rgba(getColor('primary'), 0.2);
+            outline: 3px solid rgba(getColor('primary'), 1);
+            transform: scale(1.1);
+          }
+        }
+
+        .ant-modal-close-x {
+          @apply w-full h-full;
+          .ant-modal-close-icon {
+            @apply inline-block w-full h-full;
+            svg {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 菜单样式修改
+.ant-dropdown {
+  .ant-dropdown-menu {
+    @include useTheme {
+      background: rgba(getModeVar('cardBgColor'), 0.7);
+      backdrop-filter: var(--backdrop-blur);
+    }
+  }
+}
+
+// 下拉框样式修改
+.ant-select-dropdown {
+  @include useTheme {
+    background: rgba(getModeVar('cardBgColor'), 0.7);
+    backdrop-filter: var(--backdrop-blur);
+  }
+}
+
+// 弹出层样式修改
+.ant-popover {
+  .ant-popover-content {
+    .ant-popover-inner {
+      @include useTheme {
+        background: rgba(getModeVar('cardBgColor'), 0.7);
+        backdrop-filter: var(--backdrop-blur);
+      }
+    }
+  }
+}
+
+// 消息样式修改
+.ant-message {
+  .ant-message-notice-content {
+    @include useTheme {
+      background: rgba(getModeVar('cardBgColor'), 0.7);
+      backdrop-filter: var(--backdrop-blur);
+    }
+  }
+}
+
+// 通知样式修改
+.ant-notification {
+  .ant-notification-notice {
+    @include useTheme {
+      background: rgba(getModeVar('cardBgColor'), 0.7);
+      backdrop-filter: var(--backdrop-blur);
+    }
+  }
+}
+
+// 抽屉样式修改
+.ant-drawer {
+  .ant-drawer-content-wrapper {
+    .ant-drawer-content {
+      @include useTheme {
+        background: rgba(getModeVar('cardBgColor'), 0.7);
+        backdrop-filter: var(--backdrop-blur);
+      }
+    }
+  }
+}
